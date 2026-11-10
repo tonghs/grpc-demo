@@ -1,0 +1,9 @@
+version: v2
+modules:
+  - path: proto        # proto 文件的根目录；import 路径从这里算起
+lint:
+  use:
+    - STANDARD         # buf 推荐的 lint 规则集
+breaking:
+  use:
+    - FILE             # 后面可以用来检测"破坏性变更"
